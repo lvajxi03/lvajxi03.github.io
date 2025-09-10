@@ -3,10 +3,7 @@ name: Deploy Hugo site to Pages
 
 on:
   push:
-    tags:
-      - '[0-9]{4}-[0-9]{2}-[0-9]{2}'
-      - '[0-9]{4}-[0-9]{2}-[0-9]{2}-[acefghjklmnprstuvwxy]'
-      - '[0-9]{4}-[0-9]{2}-[0-9]{2}-[acefghjklmnprstuvwxy]{2}'
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
