@@ -1,0 +1,4 @@
+baseURL = 'https://lvajxi03.github.io/'
+languageCode = 'en-us'
+title = "lvajxi03's site"
+theme = "hugo-book"
