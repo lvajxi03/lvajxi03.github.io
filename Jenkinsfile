@@ -84,7 +84,6 @@ spec:
 	    steps {
 		container('maps-hugo-builder') {
                     // Generowanie strony i paczki
-                    sh "cp -R patches/* ."
                     sh "rm -rf public && hugo --minify"
                     sh "tar -czf ${PACKAGE_NAME} -C public ."
                     
