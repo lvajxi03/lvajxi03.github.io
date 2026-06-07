@@ -1,0 +1,90 @@
+baseURL = 'https://dev.iostream.pl/'
+locale = 'en-us'
+title = 'dev@iostream.pl'
+theme = 'hugo-theme-stack'
+
+[outputs]
+ home = ["html", "rss"]
+
+[params]
+mainSections = ["posts"]
+
+[[params.widgets.homepage]]
+type = "archives"
+
+[params.widgets.homepage.params]
+limit = 12
+
+[[params.widgets.homepage]]
+type = "categories"
+
+[params.widgets.homepage.params]
+limit = 10
+
+[[params.widgets.homepage]]
+type = "tag-cloud"
+
+[params.widgets.homepage.params]
+limit = 20
+
+[params.sidebar]
+emoji = "🌿"
+subtitle = "Here be dragons"
+avatar = "avatar.jpg"
+compact = false
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 10
+
+[menu.main.params]
+icon = "home"
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 20
+
+[menu.main.params]
+icon = "archives"
+
+[[menu.main]]
+identifier = "archives"
+name = "Archives"
+url = "/archives/"
+weight = 30
+
+[menu.main.params]
+icon = "archives"
+
+[[menu.social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/lvajxi03"
+
+[menu.social.params]
+icon = "brand-github"
+
+[[menu.social]]
+identifier = "linkedin"
+name = "LinkedIn"
+url = "https://linkedin.com/in/marcin-bielewicz"
+
+[menu.social.params]
+icon = "link"
+
+[[menu.social]]
+identifier = "twitter"
+name = "Twitter"
+url = "https://x.com/marcinbielewicz"
+
+[menu.social.params]
+icon = "brand-twitter"
+
+[[menu.social]]
+identifier = "bluesky"
+name = "BlueSky"
+url = "https://bsky.app/profile/yksoepfn.bsky.social"
