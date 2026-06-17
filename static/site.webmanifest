@@ -1,0 +1,20 @@
+{
+  "name": "dev.iostream.pl",
+  "short_name": "iostream",
+  "icons": [
+    {
+      "src": "/light-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/light-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#f7f3ec",
+  "background_color": "#f7f3ec",
+  "display": "standalone"
+}
+

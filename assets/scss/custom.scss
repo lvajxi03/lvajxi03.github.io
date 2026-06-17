@@ -64,3 +64,18 @@ pre,
     line-height: 1.6;
 }
 
+
+.article-list--tile article.has-image .article-details {
+    background: linear-gradient(
+	0deg,
+	rgba(0, 0, 0, 0.68) 40%,
+	rgba(0, 0, 0, 0.28) 55%,
+	rgba(0, 0, 0, 0.05) 100%
+    ) !important;
+}
+
+.article-list--tile article.has-image .article-title {
+    color: white;
+    font-weight: 900;
+    text-shadow: 0 6px 6px rgba(0, 0, 0, 0.75);  
+}

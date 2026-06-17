@@ -1,6 +1,6 @@
 ---
 title: "2026-06-15"
-description: "Hardware and Software (I)"
+description: "Hardware and Software"
 date: 2026-06-15T19:15:00+02:00
 # image: "cover.jpg"          # Nazwa pliku graficznego z tego samego folderu
 math: false

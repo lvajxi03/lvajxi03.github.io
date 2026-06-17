@@ -1,0 +1,11 @@
+{{ $cover := "/covers/default.png" }}
+
+{{ with .Params.image }}
+    {{ $cover = . }}
+{{ else }}
+    {{ with .Params.categories }}
+        {{ $cover = printf "/covers/%s.webp" (lower (index . 0)) }}
+    {{ end }}
+{{ end }}
+
+<img src="{{ $cover }}" alt="{{ .Title }}">

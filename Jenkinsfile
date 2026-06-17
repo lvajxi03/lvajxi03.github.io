@@ -10,11 +10,11 @@ spec:
       hostnames:
         - "registry.lab.local"
   containers:
-    - name: maps-hugo-builder
+    - name: devlog-hugo-builder
       image: registry.lab.local/hugo-builder:0.162.1
       command: ["sleep"]
       args: ["infinity"]
-    - name: maps-ansible-builder
+    - name: devlog-ansible-builder
       image: registry.lab.local/ansible-builder:0.1
       command: ["sleep"]
       args: ["infinity"]
@@ -52,7 +52,7 @@ spec:
 
 	stage('Setup Environment') {
 	    steps {
-		container('maps-ansible-builder') {
+		container('devlog-ansible-builder') {
 		    configFileProvider([
 			configFile(fileId: env.KNOWN_HOSTS, variable: 'V_KNOWN_HOSTS')]) {
 			// Przygotowanie .ssh/known_hosts:
@@ -67,7 +67,7 @@ spec:
 	
 	stage('Checkout Ansible Library') {
 	    steps {
-		container('maps-ansible-builder') {
+		container('devlog-ansible-builder') {
 		    dir('ansible') {
 			checkout([$class: 'GitSCM', 
 				  branches: [[name: '*/main']], 
@@ -82,7 +82,7 @@ spec:
 
 	stage('Build Package') {
 	    steps {
-		container('maps-hugo-builder') {
+		container('devlog-hugo-builder') {
                     // Generowanie strony i paczki
                     sh "rm -rf public && hugo --minify"
                     sh "tar -czf ${PACKAGE_NAME} -C public ."
@@ -98,7 +98,7 @@ spec:
 
         stage('Ansible Deploy') {
             steps {
-		container('maps-ansible-builder') {
+		container('devlog-ansible-builder') {
                     script {
 			// KROK 1: Pobranie JSON i identyfikacja hosta
 			configFileProvider([configFile(fileId: env.CONFIG_JSON_ID, variable: 'PROJECTS_JSON')]) {
