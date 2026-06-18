@@ -88,3 +88,22 @@ icon = "brand-twitter"
 identifier = "bluesky"
 name = "BlueSky"
 url = "https://bsky.app/profile/yksoepfn.bsky.social"
+
+[params.comments]
+enabled = true
+provider = "giscus"
+
+[params.comments.giscus]
+repo = "lvajxi03/dev-iostream-pl-comments"
+repoID = "R_kgDOS-Ifbg"
+category = "Announcements"
+categoryID = "DIC_kwDOS-Ifbs4C_ZYU"
+mapping = "pathname"
+strict = 0
+reactionsEnabled = 1
+emitMetadata = 0
+inputPosition = "bottom"
+lightTheme = "light"
+darkTheme = "dark_dimmed"
+lang = "en"
+loading = "lazy"
