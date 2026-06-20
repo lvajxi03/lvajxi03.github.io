@@ -2,7 +2,6 @@
 title: "2026-06-17"
 description: "Odroid M2"
 date: 2026-06-17T08:15:00+02:00
-# image: "hardware.png"
 math: false
 license: "CC BY-NC-SA 4.0"
 hidden: false

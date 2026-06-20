@@ -2,7 +2,6 @@
 title: "2026-06-06"
 description: "Welcome to dev@iostream.pl"
 date: 2026-06-06T16:15:00+02:00
-# image: "cover.jpg"          # Nazwa pliku graficznego z tego samego folderu
 math: false
 license: "CC BY-NC-SA 4.0"
 hidden: false

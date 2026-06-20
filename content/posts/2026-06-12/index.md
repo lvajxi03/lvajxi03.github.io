@@ -2,7 +2,6 @@
 title: "2026-06-12"
 description: "My Home Lab"
 date: 2026-06-12T19:15:00+02:00
-# image: "cover.jpg"          # Nazwa pliku graficznego z tego samego folderu
 math: false
 license: "CC BY-NC-SA 4.0"
 hidden: false
