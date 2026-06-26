@@ -11,7 +11,7 @@ tags:
     - Software
     - Kubernetes
 categories:
-    - Software
+    - Kubernetes
 ---
 # k3s: Ingress
 
