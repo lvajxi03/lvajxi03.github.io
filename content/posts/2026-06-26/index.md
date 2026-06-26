@@ -1,7 +1,7 @@
 ---
 title: "2026-06-26"
 description: "Registry"
-date: 2026-06-25T11:15:00+02:00
+date: 2026-06-26T11:15:00+02:00
 math: false
 license: "CC BY-NC-SA 4.0"
 hidden: false
