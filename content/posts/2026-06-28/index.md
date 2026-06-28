@@ -339,4 +339,4 @@ Also, the left, right and center alignment of text is shown.
 
 It looks like the following:
 
-[image]
+![ListboxViewer 5](listbox-5.png)
