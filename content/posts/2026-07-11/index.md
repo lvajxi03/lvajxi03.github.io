@@ -1,5 +1,5 @@
 ---
-title: "2026-07-11"
+title: "Jenkins in Kubernetes: Bring a Bucket"
 description: "Jenkins"
 date: 2026-07-11T11:10:00+02:00
 math: false
@@ -479,6 +479,8 @@ docker buildx build \
 # Kaniko builder
 
 The second image will contain **kaniko**, mainly for building container images.
+
+> **Note:** this is a lab setup. Kaniko works well enough for our purposes here, but before using it in production, check the current state of the project and consider alternatives such as Buildah or Podman. The CI/CD ecosystem moves quickly, usually while pretending it is doing so in a controlled manner.
 
 Yes, kaniko is simpler to use than Docker in this setup. It does not require root privileges and it does not need a Docker daemon.
 
