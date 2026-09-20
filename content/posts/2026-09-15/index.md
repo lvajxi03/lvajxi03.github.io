@@ -11,7 +11,7 @@ tags:
 - SBC
 categories:
 - Hardware
-----------
+---
 
 In this episode, two more machines go through the usual treatment:
 

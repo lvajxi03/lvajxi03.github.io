@@ -11,7 +11,7 @@ tags:
 - SBC
 categories:
 - Hardware
-----------
+---
 
 After several weeks of experimenting with various SBCs, the time finally came to provide them with two basic necessities: a proper case and proper cooling.
 
