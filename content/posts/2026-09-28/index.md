@@ -8,9 +8,12 @@ hidden: false
 comments: true
 draft: false
 tags:
-    - fvwm3
-categories:
     - Software
+    - Fvwm3
+categories:
+    - Fvwm3
+series:
+    - Fvwm3: A Window Manager Unlike Any Other
 ---
 
 Thirty-three years is a very long time in software.
